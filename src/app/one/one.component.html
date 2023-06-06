@@ -1,0 +1,11 @@
+<form [formGroup]="myapp.userFormData" (ngSubmit)="onClickSubmit(myapp.userFormData)"> 
+   <input type="text" name="username" placeholder="username" formControlName="username"> 
+   <input type="text" name="password" placeholder="password" formControlName="password"> 
+   <br/> 
+   <b>Entered Username: {{ myapp.userFormData?.value?.username }}</b>
+   <br>
+   <b>Entered Password: {{ myapp.userFormData?.value?.password }}</b>
+   <br/> 
+   <input type="submit" value="submit"> 
+</form>
+
